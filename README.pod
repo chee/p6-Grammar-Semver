@@ -51,8 +51,6 @@ Grammar::Semver — A grammar for Semver v2.0.0
 	#        digit => ｢3｣
 	#         positive-digit => ｢3｣
 
-=end code
-
 =head2 DESCRIPTION
 
 Grammar::Semver is a parser for v2.0.0 semvers as defined by the spec here:
