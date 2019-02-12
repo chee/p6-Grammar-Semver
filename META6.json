@@ -1,0 +1,19 @@
+{
+  "authors" : [
+    "chee"
+  ],
+  "build-depends" : [ ],
+  "depends" : [ ],
+  "description" : "A grammar for Semver v2.0.0",
+  "license" : "Artistic-2.0",
+  "name" : "Grammar::Semver",
+  "perl" : "6.c",
+  "provides" : {
+    "Grammar::Semver" : "lib/Grammar/Semver.pm6"
+  },
+  "resources" : [ ],
+  "source-url" : "",
+  "tags" : [ ],
+  "test-depends" : [ ],
+  "version" : "0.0.1"
+}

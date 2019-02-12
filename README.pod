@@ -1,0 +1,75 @@
+=begin pod
+
+=head1 NAME
+
+Grammar::Semver - A grammar for Semver v2.0.0
+
+=head1 SYNOPSIS
+
+=begin code :lang<perl6>
+
+	use Grammar::Semver;
+	my $semver = ｢1.0.3-lol+123｣;
+	my $match = Semver.parse($semver);
+
+	say $semver;
+
+	# ｢1.0.3-lol+123｣
+	#  version-core => ｢1.0.3｣
+	#   major => ｢1｣
+	#    numeric-identifier => ｢1｣
+	#     positive-digit => ｢1｣
+	#   minor => ｢0｣
+	#    numeric-identifier => ｢0｣
+	#   patch => ｢3｣
+	#    numeric-identifier => ｢3｣
+	#     positive-digit => ｢3｣
+	#  pre-release => ｢lol｣
+	#   dot-separated-pre-release-identifiers => ｢lol｣
+	#    pre-release-identifier => ｢lol｣
+	#     alphanumeric-identifier => ｢lol｣
+	#      non-digit => ｢l｣
+	#       letter => ｢l｣
+	#      identifier-characters => ｢ol｣
+	#       identifier-character => ｢o｣
+	#        non-digit => ｢o｣
+	#         letter => ｢o｣
+	#       identifier-characters => ｢l｣
+	#        identifier-character => ｢l｣
+	#         non-digit => ｢l｣
+	#          letter => ｢l｣
+	#  build => ｢123｣
+	#   dot-separated-build-identifiers => ｢123｣
+	#    build-identifier => ｢123｣
+	#     digits => ｢123｣
+	#      digit => ｢1｣
+	#       positive-digit => ｢1｣
+	#      digits => ｢23｣
+	#       digit => ｢2｣
+	#        positive-digit => ｢2｣
+	#       digits => ｢3｣
+	#        digit => ｢3｣
+	#         positive-digit => ｢3｣
+
+=end code
+
+=head1 DESCRIPTION
+
+Grammar::Semver is a parser for v2.0.0 semvers as defined by the spec here:
+https://semver.org/spec/v2.0.0.html
+
+and the grammar here:
+https://github.com/semver/semver/blob/master/semver.md
+
+=head1 AUTHOR
+
+chee <chee@snoot.club>
+
+=head1 COPYRIGHT AND LICENSE
+
+Copyright 2019 chee
+
+This library is free software; you can redistribute it and/or modify it under
+the Artistic License 2.0.
+
+=end pod
