@@ -61,7 +61,7 @@ https://github.com/semver/semver/blob/master/semver.md
 
 =head2 AUTHOR
 
-chee <chee@snoot.club>
+chee <yay@chee.party>
 
 =head2 COPYRIGHT AND LICENSE
 
